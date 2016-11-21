@@ -21,7 +21,6 @@
 ```
   To chnage the radius/size of objects by using the user velocity of their finger use the following code below.
   By changing _defaultRadius with "radius".
-
 ```
 
 ``` Java
