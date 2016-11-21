@@ -214,20 +214,6 @@ public class ImpressionistView extends View {
                 int history_size = motionEvent.getHistorySize();
                 for(int i = 0; i < history_size; i++) {
 
-//                    float xVelocity = velocityTracker.getXVelocity();
-//                    float yVelocity = velocityTracker.getYVelocity();
-//
-//                    double squared = Math.pow(xVelocity, 2) + Math.pow(yVelocity, 2);
-//                    double halved = squared / 2.0;
-//                    double final_sum = halved / 1000;
-//
-//                    if(final_sum > 200.0) {
-//                        final_sum = 200.0;
-//                    } else if (final_sum < 25.0) {
-//                        final_sum = 25.0;
-//                    }
-//                    float radius = (float) final_sum;
-
                     float tX = motionEvent.getHistoricalX(i);
                     float tY = motionEvent.getHistoricalY(i);
 
@@ -237,20 +223,6 @@ public class ImpressionistView extends View {
                     PaintPoint paintP = new PaintPoint(tX,tY,_defaultRadius,_brushType,_paint);
                     _listPaintPoints.add(paintP);
                 }
-
-//                float xVelocity = velocityTracker.getXVelocity();
-//                float yVelocity = velocityTracker.getYVelocity();
-//
-//                double squared = Math.pow(xVelocity, 2) + Math.pow(yVelocity, 2);
-//                double halved = squared / 2.0;
-//                double final_sum = halved / 1000;
-//
-//                if(final_sum > 200.0) {
-//                    final_sum = 200.0;
-//                } else if (final_sum < 25.0) {
-//                    final_sum = 25.0;
-//                }
-//                float radius = (float) final_sum;
 
                 float x = motionEvent.getX();
                 float y = motionEvent.getY();
